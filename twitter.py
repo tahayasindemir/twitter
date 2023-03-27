@@ -3,10 +3,7 @@ import pandas as pd
 pd.set_option('max_columns', None)
 pd.set_option('display.width', 500)
 
-api_key = "CJSz41qVbb9ENG6R3J75YiU9e"
-api_secret = "KY2WejXPfs6p1dSI4IELWrUhhZzIfUPLyzGKQMZKjVcaDisXCt"
-access_token = "4055771794-lkkxIe1fn2PIoTYEYKK3Kp1Zixh3rHM583QN61a"
-access_token_secret = "lYigp4octqNxOOgNnDRJdTxiuYefhqswmgyoWq4wRQGOU"
+
 
 # authenticate with the API
 auth = tweepy.OAuthHandler(api_key, api_secret)
