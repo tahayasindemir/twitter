@@ -1,9 +1,17 @@
 import tweepy
 import pandas as pd
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 pd.set_option('max_columns', None)
 pd.set_option('display.width', 500)
 
-
+api_key = os.getenv('api_key')
+api_secret = os.getenv('api_secret')
+access_token = os.getenv('access_token')
+access_token_secret = os.getenv('access_token_secret')
 
 # authenticate with the API
 auth = tweepy.OAuthHandler(api_key, api_secret)
